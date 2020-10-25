@@ -20,6 +20,12 @@ export default {
 </script>
 
 <style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 li {
   margin: auto;
   max-width: 40rem;

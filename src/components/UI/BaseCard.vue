@@ -12,10 +12,4 @@ div {
   margin: 2rem auto;
   max-width: 40rem;
 }
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 </style>
