@@ -1,14 +1,12 @@
 <template>
-  <teleport to="body">
-    <base-dialog v-if="isInvalidInput" title="Invalid input" @close="closeDialog">
-      <template #default>
-        <p>All fields are required. Please insert data.</p>
-      </template>
-      <template #actions>
-        <base-button @click.prevent="closeDialog">Ok, close</base-button>
-      </template>
-    </base-dialog>
-  </teleport>
+  <base-dialog v-if="isInvalidInput" title="Invalid input" @close="closeDialog">
+    <template #default>
+      <p>All fields are required. Please insert data.</p>
+    </template>
+    <template #actions>
+      <base-button @click.prevent="closeDialog">Ok, close</base-button>
+    </template>
+  </base-dialog>
   <base-card>
     <form @submit.prevent="submitResource">
       <div class="form-control">
